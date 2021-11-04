@@ -1,0 +1,36 @@
+.modal-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($primary-light-darkmode , 0.7);
+  
+  .dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+}
+.night-mode {
+  .modal-overlay{
+    background-color: rgba($gray,0.7);
+    .dialog {
+      background-color: #43525c;
+      box-shadow: 0 0 5px -1px #fff;
+      border: 1px solid #43525c;
+      color: #fff;
+    }
+  }
+}

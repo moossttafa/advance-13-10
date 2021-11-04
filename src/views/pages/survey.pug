@@ -1,0 +1,12 @@
+extends ../layouts/layout-darkMode.pug
+
+block title
+	title survey
+
+block content
+	.page-content.page-content--horizontal
+		include ../components/sidebar-dark.pug
+		+sidebar-dark
+			include ../components/survey-sidebar.pug
+		.video-player
+			include ../components/survey-content.pug
